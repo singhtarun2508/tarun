@@ -13,6 +13,9 @@ $ git commit => i("type message") => esc => :wq
 $ git commit -m "message"
 $ git commit -a -m "message              :commit directly without staging area  :can be applied to modified files only not on new ones
 
+:push
+$ git push -u origin master    :push master
+
 
 :status
 $ git status
