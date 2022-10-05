@@ -1,6 +1,7 @@
-:la
+:ls
 $ ls               :shows all files
 $ ls -lart         :shows all files+hidden files
+
 
 :stage
 $ git add "file name"   
@@ -36,3 +37,22 @@ $ git checkout --f            :match all
 :remove
 $ git rm "filename"                         :remove from staging area and local
 $ git rm --cached "filename"                :remove from staging area only
+
+
+:branch
+$ git branch                           :show branch
+$ git branch "branchName"              :add branch
+$ git checkout "branchName"            :switch branch
+$ git checkout master                  :switch to master 
+$ git merge "branchName"               :merge branch to master
+$ git checkout -b "branchName"         :merge and switch branch
+
+
+
+
+:gitignore
+[add file names to .gitignore  ::>  now they will not be pushed]
+COMPLETE ADDRESS             :ignore paticular file
+ONLY NAME                    :ignore all files with that name
+*.extension                  :ignore all files with that extension
+foldername/                  :ignore folder 
