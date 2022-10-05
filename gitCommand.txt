@@ -1,0 +1,25 @@
+:stage
+$git add "file name"   
+$git add -A          :all
+
+
+:commit all
+$git commit => i("type message") => esc => :wq
+$git commit -m "message"
+
+:status
+$git status
+
+
+:log
+$git log
+
+
+:difference
+$git diff            :difference between current file and last stage
+$git diff --staged   :difference between last stage and last commit
+
+
+:checkout
+$git checkout "filename"     :match current file with last commit 
+$git checkout --f            :match all 
