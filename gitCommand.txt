@@ -1,25 +1,38 @@
+:la
+$ ls               :shows all files
+$ ls -lart         :shows all files+hidden files
+
 :stage
-$git add "file name"   
-$git add -A          :all
+$ git add "file name"   
+$ git add -A          :all
 
 
 :commit all
-$git commit => i("type message") => esc => :wq
-$git commit -m "message"
+$ git commit => i("type message") => esc => :wq
+$ git commit -m "message"
+$ git commit -a -m "message              :commit directly without staging area  :can be applied to modified files only not on new ones
+
 
 :status
-$git status
+$ git status
+$ git status -s                    :shows status summary
 
 
 :log
-$git log
+$ git log
+$ git log -p -"int"     :int represent the no. of last comits
 
 
 :difference
-$git diff            :difference between current file and last stage
-$git diff --staged   :difference between last stage and last commit
+$ git diff            :difference between current file and last stage
+$ git diff --staged   :difference between last stage and last commit
 
 
 :checkout
-$git checkout "filename"     :match current file with last commit 
-$git checkout --f            :match all 
+$ git checkout "filename"     :match current file with last commit 
+$ git checkout --f            :match all 
+
+
+:remove
+$ git rm "filename"                         :remove from staging area and local
+$ git rm --cached "filename"                :remove from staging area only
