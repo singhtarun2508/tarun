@@ -34,7 +34,7 @@ $ git diff --staged   :difference between last stage and last commit
 
 :checkout
 $ git checkout "filename"     :match current file with last commit 
-$ git checkout --f            :match all 
+$ git checkout -f            :match all 
 
 
 :remove
