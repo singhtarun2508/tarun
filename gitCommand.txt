@@ -34,7 +34,7 @@ $ git diff --staged   :difference between last stage and last commit
 
 :checkout
 $ git checkout "filename"     :match current file with last commit 
-$ git checkout --f            :match all 
+$ git checkout -f            :match all 
 
 
 :remove
@@ -51,6 +51,8 @@ $ git merge "branchName"               :merge branch to master
 $ git checkout -b "branchName"         :merge and switch branch
 
 
+:clone
+$git clone "url" "foldername"
 
 
 :gitignore
